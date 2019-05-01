@@ -14,10 +14,17 @@ What to you need:
 - Pillow
 - argparse
 
-### Personalization
-You can change the default wordlists to what you want :)
+##### Steps
+1 `git clone https://github.com/h0nus/QRGen`<br>
+2 `cd QRGen`<br>
+3 `pip3 install -r requirements.txt` OR `python3 -m pip install -r requirements.txt`<br>
+4 `python3 qrcode.py`<br>
+5 **Enjoy attacking QRCodes :P**<br>
 
-Order of wordlists group:
+### Personalization
+
+You can change the default wordlists to what you want by passing -w/--wordlist :)
+Order of default wordlists group:
 - SQL Injection
 - XSS
 - Command Injection
