@@ -8,6 +8,7 @@ What to you need:
 - python3
 - qrcode
 - Pillow
+- argparse
 
 ### Personalization
 You can change the default wordlists to what you want :)
@@ -21,3 +22,5 @@ Order of wordlists group:
 - String Fuzzing
 - SSI Injection
 - LFI/Directory Traversal
+- custom passed with -w/--wordlist
+
