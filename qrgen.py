@@ -29,7 +29,7 @@ if len(sys.argv) == 1:
     parser.print_help()
     sys.exit(1)
 
-lists = ['words/sqli','words/xss','words/cmdinj','words/formatstr','words/xxe','words/strfuzz','words/ssi','words/lfi-dt']
+lists = ['words/sqli','words/xss.txt','words/cmdinj','words/formatstr.txt','words/xxe','words/strfuzz','words/ssi','words/lfi']
 try:
     cmd= subprocess.check_output(['mkdir','genqr'],stderr=subprocess.STDOUT)
     print("Payload path generated..")
