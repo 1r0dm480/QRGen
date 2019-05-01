@@ -59,6 +59,10 @@ elif options.wordlist:
     payloads = open(z).readlines()
 i = 0
 while i < len(payloads):
+    payloads[i] = payloads[i].strip()
+    i+=1
+i=0
+while i < len(payloads):
     img = qrcode.make(payloads[i])
     img.save("genqr/payload-{}.png".format(i))
     i+=1
