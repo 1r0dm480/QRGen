@@ -56,7 +56,7 @@ if options.list:
     payloads = open(lists[z]).readlines()
 elif options.wordlist:
     z = options.wordlist
-    payloads = open(z).readlines()
+    payloads = open(str(z)).readlines()
 i = 0
 while i < len(payloads):
     payloads[i] = payloads[i].strip()
