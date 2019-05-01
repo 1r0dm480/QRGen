@@ -3,12 +3,17 @@
 from PIL import Image
 import qrcode
 import subprocess
-print("Clearing QR payloads dir..")
+try:
+    cmd= subprocess.check_output(['mkdir','genqr'],stderr=subprocess.STDOUT)
+    print("Payload path generated..")
+except:
+    print("Payload path exist, continuing...")
+    pass
 try:
     cmd = subprocess.check_output(['rm', 'genqr/*'],stderr=subprocess.STDOUT)
-    print(output)
+    print("Clearing QR payloads dir..")
 except:
-    print("Path already cleared or deleted...")
+    print("Path already cleared or deleted..")
     pass
 payloads = open("payloads.txt").readlines()
 i = 0
