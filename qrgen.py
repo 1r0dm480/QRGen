@@ -17,8 +17,16 @@ C8888 8888D 888 88"  C8888 eeee d88 88b 888 88b
 print(banner)
 #print('Tool to generate Malformed QRCodes for fuzzing QRCode parsers/reader\n')
 parser = argparse.ArgumentParser(description="Tool to generate Malformed QRCodes for fuzzing QRCode parsers/reader",
-                                 usage='qrgen.py -l [number]\nusage: qrgen.py -w [/path/to/custom/wordlist]',
-                                 epilog="Pay attention everywhere, even in the dumbest spot")
+                                 usage='''qrgen.py -l [number]\nusage: qrgen.py -w [/path/to/custom/wordlist]\n\nPayload lists:
+0 : SQL Injections
+1 : XSS
+2 : Command Injection
+3 : Format String
+4 : XXE
+5 : String Fuzzing
+6 : SSI Injection
+7 : LFI / Directory Traversal''',
+epilog="Pay attention everywhere, even in the dumbest spot")
 sgroup = parser.add_argument_group("Options for QRGen")
 sgroup.add_argument("--list","-l",type=int,help="Set wordlist to use",choices=[0,1,2,3,4,5,6,7])
 sgroup.add_argument("--wordlist","-w",type=str,default=None,help="Use a custom wordlist")
