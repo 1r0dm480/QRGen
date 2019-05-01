@@ -1,8 +1,11 @@
 # QRGen ![img](https://img.shields.io/badge/version-v0.1-orange.svg?style=for-the-badge) ![img](https://img.shields.io/badge/python-v3.6+-green.svg?style=for-the-badge)
 
 I've wrote this little script to generate generic Malformed QRCodes.
-These urlcodes are useful if you want to test some QRCode scanner's parser or how the application handle QRCode data.
+These urlcodes are useful if you want to test some QRCode scanner's parser or how the application handle QRCode data.<br>
 Down side of this tool: you need to manually scan codes with camera :(
+
+### Proof
+![](demo.gif)
 
 ### Installation
 What to you need:
